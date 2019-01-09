@@ -1,7 +1,9 @@
 [need doing]
 [+] acc game lol
+[+] destroy login, register after use
 
 [done]
+[-] Hashing
 [-] login system
 [-] sql database setup
 [-] sql queries

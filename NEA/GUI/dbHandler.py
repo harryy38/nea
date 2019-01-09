@@ -1,5 +1,20 @@
-import MySQLdb as sql
+'''
+[:] File: dbHandler.py
+[:] Function: Communicate to the SQL Database and validate information
+[:] Author: Harry Hegarty
+[:] NEA Information:
+	[Center Number]: 52221
+	[Candidate Number]: 4062
+'''
+
 import loginHandler
+
+try:
+    import MySQLdb
+    debug_mySql = True
+except ImportError:
+    import sys
+    debug_mySql = False
 
 def requestUser(attUsername):
 	connect = sql.connect("23.91.70.146", "housesta_harry", "q;wX!d_Ukjo7", "housesta_csnea")
